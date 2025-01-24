@@ -1,6 +1,8 @@
 class Solution {
 public:
     vector<int> eventualSafeNodes(vector<vector<int>>& G) {
+        ios::sync_with_stdio(false);
+        cin.tie(nullptr);
          int N = G.size();
     vector<vector<int>> R(N);
     vector<int> outdegree(N), safe(N), ans;
