@@ -10,6 +10,6 @@ public:
             if(k>sum) high=mid-1;
             else low=mid;
         }
-        return left;
+        return low;
     }
 };
