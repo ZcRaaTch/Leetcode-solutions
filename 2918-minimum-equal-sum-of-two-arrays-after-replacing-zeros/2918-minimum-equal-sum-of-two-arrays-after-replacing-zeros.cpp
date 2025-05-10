@@ -11,8 +11,7 @@ public:
             if(n==0){ c2++;continue;}
             s2+=n;
         }
-        if(c1==0 && s1<s2+c2) return -1;
-        if(c2==0 && s2<s1+c1) return -1;
+        if((c1==0 && s1<s2+c2) || (c2==0 && s2<s1+c1)) return -1;
         return max(c1+s1,c2+s2);
     }
 };
